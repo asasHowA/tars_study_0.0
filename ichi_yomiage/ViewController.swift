@@ -113,6 +113,8 @@ class ViewController: UIViewController {
                     print("double tap:",d)
                     let ichi = coordinate_comp(x: Double(xEndedTaplist[i]),y: Double(yEndedTaplist[i]))
                     speak(ichi)
+                    xEndedTaplist.removeAll()
+                    yEndedTaplist.removeAll()
                     break
                 }
             }

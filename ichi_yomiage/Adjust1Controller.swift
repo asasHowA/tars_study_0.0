@@ -74,6 +74,7 @@ class Adjust1Controller: UIViewController {
                     print(ykiroku)
                     speak(tapxy)
                 }
+                
                 break
             }
             
