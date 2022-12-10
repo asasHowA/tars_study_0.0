@@ -98,8 +98,10 @@ class ViewController: UIViewController {
             xEndedTaplist.append(location.x)
             yEndedTaplist.append(location.y)
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                self.xEndedTaplist.removeFirst()
-                self.yEndedTaplist.removeFirst()
+                if self.xEndedTaplist.isEmpty == false{
+                    self.xEndedTaplist.removeFirst()
+                    self.yEndedTaplist.removeFirst()
+                }
             }
         }
 
